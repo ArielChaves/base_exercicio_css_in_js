@@ -5,4 +5,3 @@ export const StyleHeader = styled.header`
   color: ${(props) => props.theme.corPrincipal};
   text-align: center;
   padding: 24px 0;
-`
