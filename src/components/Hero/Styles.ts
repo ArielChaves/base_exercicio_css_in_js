@@ -8,6 +8,7 @@ export const Form = styled.section`
   position: relative;
   display: flex;
   align-items: center;
+  background-position: center
 
   &::before {
     position: absolute;
@@ -15,8 +16,7 @@ export const Form = styled.section`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--cor-principal);
-    content: ""
+    content: '';
     opacity: 0.7;
   }
 
@@ -28,13 +28,14 @@ export const Form = styled.section`
 
 export const FormContent = styled.div`
   position: relative;
-  color: #eee;
+  color: #ffffff !important;
 `
 
 export const HeroTitle = styled.h1`
   font-family: Gloock, serif;
   font-size: 48px;
-
+  color: #ffffff !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   @media (max-width: 768px) {
     font-size: 32px;
   }
