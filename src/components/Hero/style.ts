@@ -9,35 +9,33 @@ export const Form = styled.form`
   display: flex;
   align-items: center;
 
-  ::before {
+  @media screen and (max-width: 768px) {
+    heigth: auto;
+    padding: 24px 0;
+  }
+
+  &::before {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: ${(props) => props.theme.corPrincipal};
+    background-color: #a7727d;
     content: '';
     opacity: 0.7;
   }
 
   div {
     position: relative;
-    color: ${(props) => props.theme.CorTextoHero};
-    font-family: Gloock, serif;
-    font-size: 28px;
-  }
-
-  @media (max-width: 768px) {
-    height: auto;
-    padding: 24px 0;
-
-    div {
-      font-size: 32px;
-    }
+    color: #eee;
   }
 `
 
-export const H2Title = styled.h2`
+export const TitleHero = styled.h2`
   font-family: Gloock, serif;
   font-size: 48px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 32px;
+  }
 `
