@@ -1,37 +1,33 @@
 import styled from 'styled-components'
 
-export const VagasAnuncio = styled.li`
-  border: 1px solid ${(props) => props.theme.corPrincipal};
-  background-color: ${(props) => props.theme.corSecundaria};
-  color: ${(props) => props.theme.corPrincipal};
+export const VagaStyled = styled.li`
+  border: 1px solid #a7727d;
+  color: #f9f5e7;
   padding: 16px;
-  transition: all ease 0.3s;
+  transition: all ease .3s;
   border-radius: 8px;
 
-  :hover {
-    background-color: ${(props) => props.theme.corPrincipal};
-    color: ${(props) => props.theme.corSecundaria};
+  &:hover {
+    background-color: #a7727d;
+    color:#f9f5e7 ;
 
     a {
-      border-color: ${(props) => props.theme.corPrincipal};
-      background-color: ${(props) => props.theme.corSecundaria};
-      color: ${(props) => props.theme.corPrincipal};
+      border-color:#a7727d ;
+      background-color: #f9f5e7;
+      color: #a7727d;
     }
   }
-
-  li {
-    list-style: none;
-  }
 `
-export const TitleAnuncioDaVaga = styled.h3`
+
+export const VagaTitle = styled.h3`
   font-weight: bold;
   margin-bottom: 16px;
 `
 
-export const LinkAnuncio = styled.a`
-  border-color: ${(props) => props.theme.corSecundaria};
-  background-color: ${(props) => props.theme.corPrincipal};
-  color: ${(props) => props.theme.corSecundaria};
+export const VagaLink = styled.a`
+  border-color: #f9f5e7;
+  background-color: #a7727d;
+  color: #f9f5e7;
   display: inline-block;
   padding: 8px 16px;
   text-decoration: none;
@@ -41,7 +37,7 @@ export const LinkAnuncio = styled.a`
   border-radius: 8px;
   text-align: center;
 
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     display: block;
   }
 `
